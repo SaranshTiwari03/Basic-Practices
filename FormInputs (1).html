@@ -1,0 +1,60 @@
+<!--  
+    <form> tag: It is used to create an HTML form for user input.It contains one or more input types.
+-->
+<marquee scrollamount="20">
+    <h1>STUDENT REGISTRATION</h1>
+</marquee>
+<form align="center" action="Message.html" method="post">
+    <label style="color: red;">*</label>
+    Name:
+    <input type="text" placeholder="Enter a name" required /><br>
+    Email:
+    <input type="email" placeholder="Enter a email" required /><br>
+    Password:
+    <input type="password" placeholder="Enter a password" required /><br>
+    Gender:
+    <input type="radio" name="gender" checked="Male"/>
+    Male
+    <input type="radio" name="gender" />
+    Female
+    <input type="radio" name="gender" />
+    Other <br>
+    City:
+    <select>
+        <optgroup label="Madhya Pradesh">
+            <option>Indore</option>
+            <option>Ujjain</option>
+            <option>Bhopal</option>
+        </optgroup>
+        <optgroup label="Maharastra">
+            <option value="mumbai">Mumbai</option>
+            <option disabled>Pune</option>
+            <option>Nagpur</option>
+        </optgroup>
+    </select><br>
+
+    Address:
+    <textarea placeholder="Enter a Address" rows="5" cols="15" required></textarea><br>
+
+    Language Known:
+    <input type="checkbox" />
+    Hindi
+    <input type="checkbox" />
+    English
+    <input type="checkbox" />
+    Urdu<br>
+    
+    Date Of Birth:
+    <input type="date"  min="2000-01-06" max="2012-01-12"/><br>
+    <input type="datetime-local" /><br>
+    <input type="month" /><br>
+    <input type="week"/>
+    <br>
+    <button type="reset">
+        RESET
+    </button>
+    <button type="submit">
+        REGISTER
+    </button>
+    <!-- <input type="submit" value="Register"/> -->
+</form>
